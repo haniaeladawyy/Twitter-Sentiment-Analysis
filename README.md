@@ -47,6 +47,31 @@ source venv/bin/activate # On Mac/Linux
 
 pip install -r requirements.txt
 
+>>Dataset
+
+This project uses the **Sentiment140 dataset** for training the sentiment analysis model.  
+Due to its large size, the dataset is **not included in this repository**.
+
+>>> How to get the dataset:
+- Official link: [Sentiment140 Dataset](http://help.sentiment140.com/for-students)  
+- Direct Kaggle link: [Twitter Sentiment140 on Kaggle](https://www.kaggle.com/datasets/kazanova/sentiment140)  
+
+>>> Instructions:
+1. Download the dataset CSV file (`training.1600000.processed.noemoticon.csv`) from Kaggle or the official site.  
+2. Place the file in the `data/` folder of this project (create it if it doesn’t exist):
+    project-root/
+├── app.py
+├── model.pkl
+├── vectorizer.pkl
+├── requirements.txt
+├── data/
+└── training.1600000.processed.noemoticon.csv
+3. Update the dataset path in `app.py` if necessary.
+
+> ⚠️ Note: The dataset is **1.6 million tweets (~200MB)**, so downloading may take a few minutes.
+
+
+
 >> Setup Twitter API
 
 Create a Twitter Developer Account.
@@ -86,3 +111,4 @@ Improve visualization with word clouds and graphs.
 >> License
 
 This project is licensed under the MIT License – feel free to use and modify it.
+
